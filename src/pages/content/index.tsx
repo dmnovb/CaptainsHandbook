@@ -23,7 +23,7 @@ workers.map((person:Personnel) => {
 })
 
     return (
-    <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', height: '200vh'}}>
+    <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
       <Typography variant='h3'>
         Captain&#39;s Handbook
       </Typography>
@@ -37,7 +37,7 @@ workers.map((person:Personnel) => {
       </Box>
       <Box sx={{textAlign: 'center', padding: '4rem'}}>
       {workers.map((person:Personnel) => (
-        <Box sx={{marginTop: '2rem', border: 1, padding: '2rem'}}>
+        <Box sx={{marginTop: '2rem',padding: '2rem'}}>
             <Typography variant='h4'>{person.title}</Typography>
             <Typography variant='h6'>{person.responsibility}</Typography>
         </Box>

@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import CssBaseline  from "@mui/material/CssBaseline";
 import Typography from "@mui/material/Typography";
+import { List, ListItem, Grid} from "@mui/material";
+
 import { classes } from "@/data";
 
 type Personnel = {
@@ -30,7 +32,23 @@ const Content = () => {
       <Typography variant="h6" sx={{ fontStyle: "italic" }}>
         to my beloved son
       </Typography>
-      <Box sx={{ mt: "3rem" }}>
+      <Box sx={{color: 'white', marginTop: "3rem"}}>
+      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+        <Grid item xs={3}>
+          <Box>Weapons</Box>
+        </Grid>
+        <Grid item xs={3}>
+          <Box>Classes</Box>
+        </Grid>
+        <Grid item xs={3}>
+          <Box>Monsters</Box>
+        </Grid>
+        <Grid item xs={3}>
+          <Box>Ores</Box>
+        </Grid>
+      </Grid>
+      </Box>
+      {/* <Box sx={{ mt: "3rem" }}>
         <Typography variant="h5" sx={{ textDecoration: "underline" }}>
           Leadership and Authority.
         </Typography>
@@ -42,7 +60,7 @@ const Content = () => {
             <Typography variant="h6">{person.responsibility}</Typography>
           </Box>
         ))}
-      </Box>
+      </Box> */}
     </Box>
     </CssBaseline>
     

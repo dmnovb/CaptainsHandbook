@@ -1,21 +1,19 @@
 import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 import Box from "@mui/material/Box";
+import Button from '@mui/material/Button';
 import CssBaseline  from "@mui/material/CssBaseline";
+import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { classes } from "@/data";
 
-type Personnel = {
-  title: string;
-  responsibility: string;
-};
 
 const Content = () => {
-  const [workers, setWorkers] = useState<Personnel[]>([]);
-
-  useEffect(() => {
-    setWorkers(classes);
-  }, []);
-
+  const router = useRouter();
+  
+  const goToClasses = () => {
+    router.push('/classes')
+  }
   return (
     <CssBaseline>
       <Box
@@ -30,7 +28,23 @@ const Content = () => {
       <Typography variant="h6" sx={{ fontStyle: "italic" }}>
         to my beloved son
       </Typography>
-      <Box sx={{ mt: "3rem" }}>
+      <Box sx={{color: 'white', marginTop: "3rem"}}>
+      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+        <Grid item xs={3}>
+          <Button>Weapons</Button>
+        </Grid>
+        <Grid item xs={3}>
+          <Button onClick={goToClasses}>Classes</Button>
+        </Grid>
+        <Grid item xs={3}>
+          <Button>Monsters</Button>
+        </Grid>
+        <Grid item xs={3}>
+          <Button>Ores</Button>
+        </Grid>
+      </Grid>
+      </Box>
+      {/* <Box sx={{ mt: "3rem" }}>
         <Typography variant="h5" sx={{ textDecoration: "underline" }}>
           Leadership and Authority.
         </Typography>
@@ -42,7 +56,7 @@ const Content = () => {
             <Typography variant="h6">{person.responsibility}</Typography>
           </Box>
         ))}
-      </Box>
+      </Box> */}
     </Box>
     </CssBaseline>
     

@@ -1,5 +1,4 @@
 import type { AppProps } from "next/app";
-import { red } from '@mui/material/colors';
 import {ThemeProvider, createTheme} from "@mui/material/styles/";
 
 
@@ -7,13 +6,10 @@ export default function App({ Component, pageProps }: AppProps) {
   const theme = createTheme({
     palette: {
       primary: {
-        main: red[500],
-      },
-      secondary: {
-        main: red[100]
+        main: '#ffffff',
       },
       background: {
-        default: "#000000"
+        default: "#1f1e1e"
       }
     },
     typography: {
@@ -24,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
       },
       h5: {
         fontSize: "1.9rem",
-        fontFamily: "roboto",
+        fontWeight: 600,
         color: '#ffffff'
       },
       h4: {
@@ -33,6 +29,10 @@ export default function App({ Component, pageProps }: AppProps) {
       },
       h3: {
       color: '#ffffff'
+      },
+      h2: {
+        color: '#fffff',
+        fontWeight: 900
       }
     },
   });

@@ -1,17 +1,17 @@
 export const leadership = [
-    {
-        title: "The Captain",
-        responsibility: `The captain is the leader of the crew. He can assume the roles of all other management personnel, 
+  {
+    title: "The Captain",
+    responsibility: `The captain is the leader of the crew. He can assume the roles of all other management personnel, 
         fulfilling their functions and possessing their privileges. 
         He has the final say in all decisions. Orders given directly from the captain are mandatory. 
         The captain is the only person who can helm the ship (exceptions apply to emergency situations, 
         or if the captain gives permission). 
         Any disputes that may arise are settled by the captain. His word is final. 
-        Both the head of security and the storage logistician report to the captain. `
-    },
-    {
-        title: "The Head Of Security",
-        responsibility: `The head of security is responsible for keeping the peace 
+        Both the head of security and the storage logistician report to the captain. `,
+  },
+  {
+    title: "The Head Of Security",
+    responsibility: `The head of security is responsible for keeping the peace 
         aboard the submarine. 
         He can arrest anyone at any time. He’s also 
         responsible for dealing with any outside threats. 
@@ -25,11 +25,11 @@ export const leadership = [
         Honorary gunners are non-security officers who have the constant permission to use the turrets. 
         In cases of emergency, any crewmember may use the turrets. The head of security gives direct orders to the members of the security department 
         on how to fulfill their duties, 
-        however The head of security must comply with the orders of the captain.`
-    },
-    {
-        title: "The Storage Logistician",
-        responsibility: `The storage logistician is responsible for the resources aboard the ship. 
+        however The head of security must comply with the orders of the captain.`,
+  },
+  {
+    title: "The Storage Logistician",
+    responsibility: `The storage logistician is responsible for the resources aboard the ship. 
         He’s the one in charge of the storage: before a crewmember takes anything from there, 
         they must consult with him. 
         He’s the only one who can authorize the crafting of items. 
@@ -40,23 +40,22 @@ export const leadership = [
         All members of the engineering department must follow the orders of the storage logistician. 
         The storage logistician is authorized to carry a weapon and use the turrets, 
         but is not obliged to follow the orders of the Head of security.  
-        The storage logistician must comply with the orders of the captain.`
-    },
-    {
-        title: "The Council",
-        responsibility: `Either the storage logistician or the head of security may challenge a captain’s order, 
+        The storage logistician must comply with the orders of the captain.`,
+  },
+  {
+    title: "The Council",
+    responsibility: `Either the storage logistician or the head of security may challenge a captain’s order, 
         or propose an idea. In such a case, a vote is held to determine whether the proposition will go through 
         or no. The captain’s vote has an index of 1.5 , 
-        whereas the individual vote of the head of security and the storage logistician is 1.`
-    }
-    
-]
+        whereas the individual vote of the head of security and the storage logistician is 1.`,
+  },
+];
 
 export const classes = [
-    {
-        id: 1,
-        title: "The Mechanic",
-        duties: `A mechanic’s most important duty is to fix leaks and hull breaches. 
+  {
+    id: 1,
+    title: "The Mechanic",
+    duties: `A mechanic’s most important duty is to fix leaks and hull breaches. 
         The mechanic must always have at least one full spare tank of welding fuel. 
         When the mechanic isn’t welding, he needs to do maintenance checks on 
         all mechanical systems and fix them in case they’re damaged.  
@@ -65,12 +64,17 @@ export const classes = [
         Outside the submarine, mechanics are the ones who extract ores. 
         Yet again, they must consult with the storage logistician on which ores need to be mined. NOTE: It is mandatory for all crewmembers to be on the lookout for ores. If any crewmember finds an ore deposit, they must inform everyone through the radio. Storage logistician makes the decision on whether we stop to retrieve the ore or not. Mechanics are also useful when an outpost needs to be repaired, when looting a destroyed ship or an alien temple. N.B. Mechanics with an exosuit and a cargo scooter are very useful outside the submarine, as they have 20 additional inventory slots.
         `,
-        talents: ['Ballast Denizen', 'Engine Engineer', 'Safety First', 'Modular Repairs']
-    },
-    {
-        id: 2,
-        title: "The Engineer",
-        duties: `It is the engineer’s responsibility to keep the power of the submarine on at all times. 
+    talents: [
+      "Ballast Denizen",
+      "Engine Engineer",
+      "Safety First",
+      "Modular Repairs",
+    ],
+  },
+  {
+    id: 2,
+    title: "The Engineer",
+    duties: `It is the engineer’s responsibility to keep the power of the submarine on at all times. 
         Engineers assigned to maintaining the reactor must always have a 
         spare fuse in their inventory. 
         When the power is on, the engineer must do maintenance check on the 
@@ -81,12 +85,12 @@ export const classes = [
         Additionally, engineers should carry a welder and fix any leaks they come across first.
         Outside the submarine, engineers are needed for repairing outposts.
         `,
-        talents: ['Egghead', 'Grounded', 'Remote Monitor', 'Sample Collection']
-    },
-    {
-        id: 3,
-        title: "The Medic",
-        duties: `It is the medic’s responsibility to make sure that all crewmembers remain alive and in 
+    talents: ["Egghead", "Grounded", "Remote Monitor", "Sample Collection"],
+  },
+  {
+    id: 3,
+    title: "The Medic",
+    duties: `It is the medic’s responsibility to make sure that all crewmembers remain alive and in 
         condition to perform their duties. If this condition is fulfilled, 
         the medic must make sure that there’s enough medicine for everyone on the ship. 
         The items used for medicinal reasons are not part of the storage logistician’s 
@@ -94,45 +98,149 @@ export const classes = [
         However, if an item may be needed both for medicinal and other purposes, the medic will have to 
         check with the stock logistician. The medic has constant access to the fabricator and deconstructor. 
         The doctor may also receive a salary in order to buy the needed medicinal items.`,
-        talents: ['Example of Health', `Stayin' Alive`, 'Blood Donor', `Fireman's Carry`, 'No Pressure']
-    },
-    {
-        id: 4,
-        title: "The Security Officer",
-        duties: `The security officer has the same responsibilities as the head of security 
+    talents: [
+      "Example of Health",
+      `Stayin' Alive`,
+      "Blood Donor",
+      `Fireman's Carry`,
+      "No Pressure",
+    ],
+  },
+  {
+    id: 4,
+    title: "The Security Officer",
+    duties: `The security officer has the same responsibilities as the head of security 
         without the privileges of being part of management.
         He may not arrest anyone without the order to do so.`,
-        talents: ['Buff', 'First Aid Training', 'Physical Conditioning', 'Weaponsmith']
-    },
-    {
-        id: 5,
-        title: "The Assistant",
-        duties: `The assistant has no particular responsibilities, 
+    talents: [
+      "Buff",
+      "First Aid Training",
+      "Physical Conditioning",
+      "Weaponsmith",
+    ],
+  },
+  {
+    id: 5,
+    title: "The Assistant",
+    duties: `The assistant has no particular responsibilities, 
         instead he must follow the current order given either directly to him or to the entire crew in general. 
         He must follow the orders of both the head of security and the storage logistician. `,
-        talents: ['Assistan are mailman', 'Revenge Squad']
-    }
-]
+    talents: ["Assistan are mailman", "Revenge Squad"],
+  },
+];
 
 export const weapons = [
-    {
-        turretWeapons: {
-            coilGuns: {
-                ammo: ['Regular Ammo', 'Penetrating Ammo', 'Explosive', 'Psyichorium', 'Depleted']
-            },
-            pulseLaser: {
-                ammo: ['Regular Ammo', 'Tri-laser']
-            },
-            railGuns: {
-                ammo: ['Regular Ammo', 'Nuclear Shell', 'Psyicorium', 'Canister']
-            },
-            chainGuns: {
-                notes: 'coilgun but faster and expensivel; good for crowd control',
-                ammo: ['Regular Ammo', 'Psyicorium', 'Shredder']
-            }
-        },
-        handguns: {
-
-        }
-    }
-]
+  {
+    turretWeapons: {
+      coilGuns: {
+        name: "Coil Gun",
+        ammo: [
+          "Regular Ammo",
+          "Penetrating Ammo",
+          "Explosive",
+          "Psyichorium",
+          "Depleted",
+        ],
+      },
+      pulseLaser: {
+        name: "Pulse Laser",
+        ammo: ["Regular Ammo", "Tri-laser"],
+      },
+      railGuns: {
+        name: "Rail Gun",
+        ammo: ["Regular Ammo", "Nuclear Shell", "Physicorium ", "Canister"],
+      },
+      chainGuns: {
+        name: "Chain Gun",
+        notes: "coilgun but faster and expensivel; good for crowd control",
+        ammo: ["Regular Ammo", "Physicorium ", "Shredder"],
+      },
+      flak: {
+        name: "Flak",
+        notes: "good for clusters",
+        ammo: [
+          "Explosive Ammo",
+          "Focused Ammo",
+          "Spreading Ammo",
+          "Physicorium Ammo",
+        ],
+      },
+    },
+    handguns: {
+      revolvers: {
+        name: "Revolver",
+        notes: [
+          `Universal early game gun, bad armor pen but consistent. 
+          Depleted fuel rounds are good but annoying to obtain components for. 
+          Making normal rounds is cheap`,
+        ],
+      },
+      handcannon: {
+        name: "Handcannon",
+        notes: [
+          `A lot of damage and armor pen, can easily deal with mudraptors. 
+          A lot of tit-alum is needed tho. Probably best saved for emergency situations
+        Shotguns in general – Great for a cluster of squishy enemies, terrible armor pen.`,
+        ],
+      },
+    },
+    rifles: {
+      rifle: {
+        name: "Rifle",
+        notes: [
+          `Shots deal as much dmg as a point blank from a riot shotgun, 
+          good range but slow fire rate. 
+          Regular bullets have decent armor pen. 
+          Not very expensive to craft. Can also be loaded with grenades.`,
+        ],
+      },
+      smg: {
+        name: "Smg",
+        notes: [
+          `Fast fire rate but not high damage and armor pen. 
+          Also hard to control.Mainly good for the crowd control. 
+          Overall good for squishier targets. Ammo is cheap to make. 
+          Option for depleted fuel mag`,
+        ],
+      },
+      assaultRifle: {
+        name: "Assault Rifle",
+        notes: [
+          `More dmg and armor pen + easier to 
+        control than the smg. Also better range. 
+        Ammo isn’t too expensive. 
+        The AR can probably fare well against a mudraptor.`,
+        ],
+      },
+      scrapCannon: {
+        name: "Scrap Cannon",
+        notes: [
+          `Deals good damage, 
+        bad armor pen but ammo is very cheap. 
+        Also decent crowd control.`,
+        ],
+      },
+    },
+    explosives: {
+      dirtyBomb: {
+        name: "Dirty Bomb",
+        notes: [
+          ` Doesn’t deal much damage but leaves a radiation sickness area of effect
+            UEX - A cheap explosive (sodium+phosphorus). Can be used as every other explosive and has the same properties, but lower dmg than the c4 variants`,
+        ],
+      },
+      uex: {
+        name: "UEX",
+        notes: [
+          `A cheap explosive (sodium+phosphorus). Can be used as every other explosive and has the same properties, but lower dmg than the c4 variants`,
+        ],
+      },
+      compoundN: {
+        name: "Compound N",
+        notes: [
+          `Same as UEX but crafted on the medical fabricator (al, potassium, sulfuric acid) Volatile variant - explodes some time after fabrication, no upsides from regular one`,
+        ],
+      },
+    },
+  },
+];

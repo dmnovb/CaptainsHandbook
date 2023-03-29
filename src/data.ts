@@ -113,3 +113,26 @@ export const classes = [
         talents: ['Assistan are mailman', 'Revenge Squad']
     }
 ]
+
+export const weapons = [
+    {
+        turretWeapons: {
+            coilGuns: {
+                ammo: ['Regular Ammo', 'Penetrating Ammo', 'Explosive', 'Psyichorium', 'Depleted']
+            },
+            pulseLaser: {
+                ammo: ['Regular Ammo', 'Tri-laser']
+            },
+            railGuns: {
+                ammo: ['Regular Ammo', 'Nuclear Shell', 'Psyicorium', 'Canister']
+            },
+            chainGuns: {
+                notes: 'coilgun but faster and expensivel; good for crowd control',
+                ammo: ['Regular Ammo', 'Psyicorium', 'Shredder']
+            }
+        },
+        handguns: {
+
+        }
+    }
+]
